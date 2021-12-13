@@ -1,0 +1,20 @@
+@import '/src/global.scss';
+
+.products{
+    width: 100%;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+
+    .pageTitle{
+        padding: 40px 0;
+        color: $fontColor;
+    }
+    .allProducts{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+}

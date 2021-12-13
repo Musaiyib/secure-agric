@@ -1,0 +1,67 @@
+@import '/src/global.scss';
+
+.form{
+    display: flex;
+    justify-content: center;
+    margin: 0 10px 20px;
+    align-items: center;
+    box-shadow: 0 3px 5px $fontColor;
+    width: 70vw;
+    min-width: 346px;
+    max-width: 500px;
+    height: 450px;
+    font-family: 'Nunito Sans', sans-serif;
+    border-radius: 10px;
+    contain: content;
+
+    h3{
+        margin: 40px 0;
+        font-size: 20px;
+        font-weight: bold;
+        color: $fontColor;
+    }
+
+    .contact-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+
+        input{
+            height: 40px;
+        }
+        .form-inputs{
+            min-width: 95%;
+            margin: 5px 0px;
+            padding: 5px;
+            font-size: 15px;
+            border: 1px solid $fontColor;
+            border-radius: 7px;
+            color: $fontColor;
+
+            &:focus{
+                border: none;
+                border: 2px solid $fontColor;
+                border-color: $fontColor;
+            }
+        }
+    }
+
+    .formBtn{
+        border: none;
+        border-radius: 7px;
+        border: 1px solid $fontColor;
+        width: 80px;
+        height: 40px;
+        color: $fontColor;
+        background-color: $Background;
+        margin: 10px 0;
+        
+        &:hover{
+            color: $Background;
+            background-color: $fontColor;
+            
+        }
+    }
+}

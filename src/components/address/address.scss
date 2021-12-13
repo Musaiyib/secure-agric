@@ -1,0 +1,64 @@
+@import '/src/global.scss';
+
+.address{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    margin: 0 10px 20px;
+    box-shadow: 0 3px 5px $fontColor;
+    width: 70vw;
+    min-width: 346px;
+    max-width: 500px;
+    height: 450px;
+    font-family: 'Nunito Sans', sans-serif;
+    border-radius: 10px;
+
+    h3{
+        margin: 40px 0;
+        font-size: 20px;
+        font-weight: bold;
+        color: $fontColor;
+    }
+
+    .addressContent{
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        flex-direction: column;
+        width: 90%;
+
+        .location{
+
+            span{
+
+                i{
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: #e74c3c;
+                    margin-top: 20px;
+                    padding: 0 5px;
+                    cursor: pointer;
+                    &:hover{
+                        color: $fontColor;
+                    }
+                }
+            }
+        }
+
+        .contact-address{
+        
+            a{
+                font-size: 30px;
+                text-decoration: none;
+                color: #e74c3c;
+                margin-top: 20px;
+                padding: 0 5px;
+                cursor: pointer;
+                &:hover{
+                    color: $fontColor;
+                }
+            }
+        }
+    }
+}

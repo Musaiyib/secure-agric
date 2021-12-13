@@ -1,0 +1,42 @@
+@import '/src/global.scss';
+
+.members{
+    width: 100%;
+    text-align: center;
+    background-color: $Background;
+    font-family: 'Nunito Sans', sans-serif;
+
+    .pageTitle{
+        padding: 40px 0;
+        color: $fontColor;
+        text-decoration: underline;
+        text-decoration-color: $fontColor;
+    }
+
+    .line{
+        width: 80%;
+        margin: 0% 10%;
+        border: none;
+        border-radius: 10px;
+        border: 1px solid $fontColor;
+    }
+
+//------------ Advisors style ------------
+
+    .advisors{
+        display: flex;
+        justify-content: center;
+        min-height: calc(100vh - 60px);
+        flex-wrap: wrap;
+    }
+
+    
+    //------------ Team style ------------
+
+    .teams{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        min-height: calc(100vh - 60px);
+    }
+}

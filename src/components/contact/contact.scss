@@ -1,0 +1,33 @@
+@import '/src/global.scss';
+
+.contact{
+    background-color: $Background;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    
+    .pageTitle{
+        padding: 40px 0;
+        color: $fontColor;
+        text-decoration: underline;
+        text-decoration-color: $fontColor;
+    }
+    
+    .conatctContent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 100%;
+
+        .left{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

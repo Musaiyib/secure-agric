@@ -1,0 +1,59 @@
+@import '/src/global.scss';
+
+.about{
+    background-color: $Background;
+    text-align: center;
+
+    .pageTitle{
+        padding: 40px 0;
+        color: $fontColor;
+    }
+    
+    .pageDescription{    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        
+        .card{
+            // display: flex;
+            // flex-wrap: wrap;
+            // align-items: center;
+            margin: -10px 20px 10px;
+            flex-direction: column;
+            // background-color: $Background;
+            // box-shadow: 0 0 15px $fontColor;
+            font-family: 'Nunito Sans', sans-serif;
+            border-radius: 10px;
+            padding: 10px 20px;
+            align-self: normal;
+            // width: 450px;
+            margin-bottom: 50px;
+
+            .img{
+                max-width: 200px;
+                height: auto;
+                margin: 10px 0 30px;
+            }
+            
+            .header{
+                font-size: 1.3rem;
+                display: block;
+                font-family: 'Nunito Sans', sans-serif;
+                color: $fontColor;
+                margin: 10px 0px;
+                text-transform: uppercase;
+            }
+
+            .contentNote{
+                color: $fontColor;
+                font-size: 20px;
+                margin: 15px 0px;
+                text-align: left;
+                font-family: 'Nunito Sans', sans-serif;
+
+            }
+        }
+    }
+}
