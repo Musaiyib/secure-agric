@@ -25,14 +25,6 @@ const data = {
 
     teams: [
         {
-            name: 'Kabir Umar',
-            image: CFO,
-            skills: 'CFO & CVO',
-            facebook: '',
-            twitter: '',
-            instagram: ''
-        },
-        {
             name: 'Waziri Ismail',
             image: CEO,
             skills: 'CEO',
@@ -40,6 +32,14 @@ const data = {
             twitter: '',
             instagram: '',
             github: ''
+        },
+        {
+            name: 'Kabir Umar',
+            image: CFO,
+            skills: 'CFO & CVO',
+            facebook: '',
+            twitter: '',
+            instagram: ''
         },
         {
             name: 'Nuruddeen Ibrahim',
@@ -50,15 +50,15 @@ const data = {
             instagram: '',
             github: ''
         },
-        {
-            name: 'Admad Abdullahi Adamu',
-            image: url,
-            skills: 'Blockchain Developer',
-            facebook: '',
-            twitter: '',
-            instagram: '',
-            github: ''
-        },
+        // {
+        //     name: 'Admad Abdullahi Adamu',
+        //     image: url,
+        //     skills: 'Blockchain Developer',
+        //     facebook: '',
+        //     twitter: '',
+        //     instagram: '',
+        //     github: ''
+        // },
         {
             name: 'Scott Ugbah',
             skills: 'Head of Research and Business Development',

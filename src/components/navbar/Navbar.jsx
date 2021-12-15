@@ -1,30 +1,40 @@
-import { useState } from 'react'
+import { useEffect } from 'react'
 import './navbar.scss'
 import SecureAgric from '../../img/secure-agric.png'
 import MobileNav from '../../mobileNav/MobileNav'
 
-const Navbar = () => {
-    const [showMenu, setShowMenu] = useState(true)
+const Navbar = ({setMenuOpen, menuOpen}) => {
+    // const [showMenu, setShowMenu] = useState(true)
 
-    const menuShow = () => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    const mobile = () => {
         const showMobileNav = document.getElementById('mobileNav')
-        if(showMenu === true){
+        if(menuOpen === true) {
             showMobileNav.style.top='60px'
-        }else if(showMenu === false){
+        }else if(menuOpen === false){
             showMobileNav.style.top='-350px'
         }
-        setShowMenu(!showMenu)
-
-        
     }
+    const screenWidth = () =>{
+
+        if(window.innerWidth >= 841 ){
+            setMenuOpen(false)
+        }
+
+    }
+    window.addEventListener('resize', screenWidth)
+
+    useEffect(() => {
+        mobile()
+    }, [mobile])
     return (
-        <div className="navbar">
+        <div className={"navbar " + ( menuOpen ? "active" : "")}>
             <div className="left">
                 <img src={SecureAgric} className="logoImg" alt="" />
                 {/* logo */}
             </div>
             <div className="right">
-                <div className="hamburger" onClick={menuShow}>
+                <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
                     <span className="first"></span>
                     <span className="second"></span>
                     <span className="third"></span>

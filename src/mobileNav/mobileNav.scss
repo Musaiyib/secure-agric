@@ -20,7 +20,7 @@
         align-items: center;
         list-style: none;
 
-        @media (max-width: 840px) {
+        @media (min-width: 841px) {
             display: none;
             
         }

@@ -39,6 +39,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            flex-direction: column;
             margin-right: -10px;
             cursor: pointer;
             transition: .5s ease-in-out;
@@ -54,6 +55,8 @@
                 height: 3px;
                 background-color: $Background;
                 border-radius: 10px;
+                transform-origin: left;
+                transition: all 2s ease;
             }
         }
 
@@ -80,17 +83,24 @@
         }
     }
     &.active{
-        background-color: $Background;
-        color: $fontColor;
-
-        .right{
-
-            .hamburger{
-
-                span{
-                    background-color: $fontColor;
-                }
-            }
-        }
+       background-color: $Background;
+       color: $fontColor;
+       .right{
+           .hamburger{
+               span{
+                   &:first-child{
+                       background-color: $fontColor;
+                       transform: rotate(45deg);
+                   }
+                   &:nth-child(2){
+                       opacity: 0;
+                   }
+                   &:last-child{
+                       background-color: $fontColor;
+                       transform: rotate(-45deg);
+                   }
+               }
+           }
+       }
     }
 }
