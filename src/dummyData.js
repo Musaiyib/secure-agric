@@ -1,20 +1,18 @@
 import CEO from './img/CEO.jpg'
+import HOP from './img/HOP.jpg'
 import COO from './img/COO.jpg'
 import CFO from './img/CFO.jpg'
 import HR from './img/Head of research.jpg'
 import Raj from './img/Raj Kapoor.jpg'
 import ESQ from './img/ESQ.jpg'
-import iklimatu from './img/iklimatu.jpg'
 import CCI from './img/CCI.jpg'
-
-let url ='https://techdigest.ng/wp-content/uploads/sites/34/2021/11/1635790030834_1635790030623_1635790029744_1635790027332_1635790025746_7191BA89-D65E-4FC1-9DC5-417C3756EAD1.jpg'
 
 
 const data = {
     advisors: [
         {
             name: 'Raj Kapoor',
-            position: 'CTO',
+            position: 'Advisor',
             image: Raj,
             note: 'Lack of finance and market access were the motivation behind Agrikoin conceptualisation.',
             facebook: '',
@@ -34,21 +32,29 @@ const data = {
             github: ''
         },
         {
-            name: 'Kabir Umar',
-            image: CFO,
-            skills: 'CFO & CVO',
+            name: 'Iklimatu Abubakar',
+            skills: 'COO',
+            image: COO,
             facebook: '',
             twitter: '',
             instagram: ''
         },
         {
             name: 'Nuruddeen Ibrahim',
-            image: COO,
-            skills: 'CEO',
+            image: HOP,
+            skills: 'Head of Payment',
             facebook: '',
             twitter: '',
             instagram: '',
             github: ''
+        },
+        {
+            name: 'Kabir Umar',
+            image: CFO,
+            skills: 'CFO & CVO',
+            facebook: '',
+            twitter: '',
+            instagram: ''
         },
         // {
         //     name: 'Admad Abdullahi Adamu',
@@ -68,24 +74,16 @@ const data = {
             instagram: ''
         },
         {
-            name: 'Scott Ugbah',
-            skills: 'Head of Research and Business Development',
-            image: iklimatu,
-            facebook: '',
-            twitter: '',
-            instagram: ''
-        },
-        {
-            name: 'Scott Ugbah',
-            skills: 'Head of Research and Business Development',
+            name: 'Paul Barinor',
+            skills: 'Esq. Legal',
             image: ESQ,
             facebook: '',
             twitter: '',
             instagram: ''
         },
         {
-            name: 'Scott Ugbah',
-            skills: 'Head of Research and Business Development',
+            name: 'Taiwo Kunle',
+            skills: 'CCI, Advisor and Compliance.',
             image: CCI,
             facebook: '',
             twitter: '',

@@ -47,7 +47,7 @@ const Navbar = ({setMenuOpen, menuOpen}) => {
                     <li className="nav-ul-li"><a href="#contact" className="nav-links">Contact</a></li>
                 </ul>
             </div>
-            <MobileNav />
+            <MobileNav setMenuOpen={setMenuOpen} />
         </div>
     )
 }
